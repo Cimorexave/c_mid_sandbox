@@ -7,6 +7,12 @@ default:
 mta: 
 	$(CC) $(CFLAGS) ./make_test_adv/mta.c -o ./bin/mta
 
+midcomp: mid_comp.o
+	$(CC) $(CFLAGS) ./obj/mid_comp.o -o ./bin/mid_comp
+
+mid_comp.o:
+	$(CC) $(CFLAGS) -c ./obj_test/mid_comp.c -o ./obj/mid_comp.o
+
 clean:
 	rm bin/*
 
