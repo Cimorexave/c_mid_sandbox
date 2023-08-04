@@ -13,6 +13,15 @@ midcomp: mid_comp.o
 mid_comp.o:
 	$(CC) $(CFLAGS) -c ./obj_test/mid_comp.c -o ./obj/mid_comp.o
 
+header: header_test.o my_header.o
+	$(CC) $(CFLAGS) ./obj/my_header.o ./obj/header_test.o -o ./bin/header
+
+header_test.o: 
+	$(CC) $(CFLAGS) ./header/my_header.h -o ./obj/my_header.o
+
+my_header.o: 
+	$(CC) $(CFLAGS) -c ./header/header_test.c -o ./obj/header_test.o
+
 clean:
 	rm bin/*
 
