@@ -2,3 +2,5 @@
 # executable
 bin/*
 obj/*
+
+.vscode
