@@ -31,6 +31,9 @@ num:
 rw:
 	$(CC) $(CFLAGS) ./readwrite/readwrite.c -o ./bin/readwrite
 
+random:
+	$(CC) $(CFLAGS) ./rand/rand.c -o ./bin/rand
+
 clean:
 	rm bin/*
 
