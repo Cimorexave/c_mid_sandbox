@@ -28,7 +28,7 @@ vp:
 num:
 	$(CC) $(CFLAGS) ./numerics/numerics.c -o ./bin/numerics
 
-readwrite:
+rw:
 	$(CC) $(CFLAGS) ./readwrite/readwrite.c -o ./bin/readwrite
 
 clean:
