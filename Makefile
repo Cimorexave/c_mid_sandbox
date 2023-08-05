@@ -25,6 +25,9 @@ my_header.o:
 vp:
 	$(CC) $(CFLAGS) ./void_pointer/void_pointer.c -o ./bin/void_pointer
 
+num:
+	$(CC) $(CFLAGS) ./numerics/numerics.c -o ./bin/numerics
+
 clean:
 	rm bin/*
 
