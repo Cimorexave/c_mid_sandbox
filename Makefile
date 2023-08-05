@@ -22,6 +22,9 @@ header_test.o:
 my_header.o: 
 	$(CC) $(CFLAGS) -c ./header/header_test.c -o ./obj/header_test.o
 
+vp:
+	$(CC) $(CFLAGS) ./void_pointer/void_pointer.c -o ./bin/void_pointer
+
 clean:
 	rm bin/*
 
